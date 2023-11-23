@@ -10,4 +10,3 @@ function openLinkedin() {
 function downloadCV() {
     window.open("https://drive.google.com/file/d/1mDB2GRZz-0DAm_hYPRbzVVx2wFVBQ6AS/view?usp=sharing", "_blank")
 }
-
