@@ -26,6 +26,7 @@ p {
 }
 
 h1 {
+    padding: 1rem;
     margin-top: 4rem;
     margin-bottom: 0;
     font-size: 3em;
