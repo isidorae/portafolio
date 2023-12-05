@@ -1,7 +1,7 @@
 const spanish = {
     title: "Hola, mi nombre es Isidora :)",
     mainParagraph: "Lo que mas me gusta del area de la tecnología de la información es prácticar lo que voy aprendiendo en cuanto a técnicas de programación, ir generando nuevos circuitos neuronales, desarrollar y pulir la lógica de programación, aprender a usar nuevas tecnologías, y por sobre todas las cosas, aprender de aquellos que son expertos en el área.",
-    backgroundData: "El año 2019 egrese de una carrera del area de la salud. Luego de probar diversas áreas, el año 2023 decidí dedicar la mayor parte de mi tiempo y energía en aprender programación y desarrollo web.",
+    backgroundData: "El año 2019 egrese de una carrera del área de la salud. Luego de probar diversas áreas, el año 2023 decidí dedicar la mayor parte de mi tiempo y energía en aprender programación y desarrollo web.",
     objective: "En continuo aprendizaje 🙏🏻 Buscando adquirir experiencia en el mundo laboral de la tecnología, aprender a planificar y diseñar de forma estratégica, con soluciones que prevalezcan en el tiempo.",
     knowledge: "Conocimientos Actuales",
     knowledgeData: "Js / CSS / HTML / React / Node / Express / MongoDB / Diseño web / Adobe Photoshop",
