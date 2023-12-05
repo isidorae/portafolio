@@ -10,12 +10,15 @@ html {
 }
 
 body {
+    background-color: rgb(240, 240, 240);
+    color: rgb(39, 39, 39);
     margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    color: rgb(80, 100, 200);
+    color: rgb(39, 39, 39);
 }
 
 p {
@@ -24,12 +27,57 @@ p {
 
 h1 {
     margin-top: 4rem;
+    margin-bottom: 0;
+    font-size: 3em;
 }
 
 a {
     color: rgb(170, 0, 255);
     text-decoration: none;
     font-weight: bold;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(138, 157, 255);
+}
+
+h1, h2, h3 {
+   color: rgb(138, 157, 255);
+}
+
+
+a:hover {
+    color: rgb(93, 119, 252);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-container {
+    position: sticky;
+    top: 5px;
+    margin:10px;
+    display: flex;
+    justify-content: end;
+}
+
+.lang-btn {
+    background-color: rgb(240, 240, 240);
+    border: 1.5px solid rgb(95, 182, 240);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.mode-btn {
+    background-color: rgb(240, 240, 240);
+    border: 1.5px solid rgb(95, 182, 240);
+    border-radius: 10px;
 }
 
 .intro-container {
@@ -42,18 +90,35 @@ a {
     flex-direction: column;
 }
 
+.flex-main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+
 .contact-buttons {
     margin: 0 auto;
     margin-top: 2rem;
 }
 
 button {
+    font-family: 'Oswald', sans-serif;
     background-color: transparent;
     height: 2rem;
     width: 5rem;
     border: 1px solid rgb(95, 182, 240);
-    color: rgb(82, 151, 197);
+    color: rgb(138, 157, 255);
 }
+
+.nav-btn {
+    height: 2rem;
+    width: 2.1rem;
+    border-radius: 50%;
+}
+
 
 button:hover {
     /* background-color: rgb(245, 234, 250); */
@@ -77,12 +142,6 @@ main {
 }
 
 .portafolio-container {
-    /* margin: 0 auto;
-    width: 800px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    border: 1px solid black; */
     display:grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
@@ -95,7 +154,7 @@ main {
 
 .proyect-card {
     border: 2px solid rgb(95, 182, 240);
-    background-color: rgb(248, 251, 255);
+    background-color: rgb(240, 240, 240);
     border-radius: 5px;
     margin-left: 7rem;
     margin-top: 1rem;
@@ -106,6 +165,7 @@ main {
     justify-content: center;
     
 }
+
 
 .proyect-card:hover {
     box-shadow: 0rem 0.2rem 0.6rem rgba(53, 0, 128, 0.4);
@@ -157,4 +217,29 @@ main {
 footer {
     text-align: center;
     margin-bottom: 2rem;
+}
+
+/******** dark theme *********/
+.dark-theme {
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+}
+
+.card-dark-theme {
+    background-color: rgb(40, 40, 40);
+}
+
+.card-dark-theme:hover {
+    box-shadow: 0rem 0.2rem 0.6rem rgba(158, 219, 241, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+    border: 2px solid rgb(72, 100, 244);
+}
+
+.dark-btn {
+    border: 1px solid rgb(138, 157, 255);
+    background-color: rgb(40, 40, 40);
+}
+
+@media (max-width: 600px) {
+
 }

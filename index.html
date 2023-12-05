@@ -5,30 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Isidora E.</title>
     <link rel="stylesheet" href="index.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class="dark-theme">
+    <nav class="nav-container">
+        <button id="EN" class="nav-btn lang-btn dark-btn" onclick="toggleLang(event)">EN</button>
+        <button id="ES" class="nav-btn lang-btn hidden dark-btn" onclick="toggleLang(event)">ES</button>
+        <button id="light-theme" class="nav-btn mode-btn  dark-btn" onclick="toggleMode(event)">🌞</button>
+        <button id="dark-theme" class="nav-btn mode-btn hidden  dark-btn" onclick="toggleMode(event)">🌜</button>
+    </nav>
     <header>
         <section>
-            <h1>Hola, mi nombre es <i> Isidora </i> :)</h1>
+            <h1 id="title"> :)</h1>
             <div class="intro-container">
-                <p>El año 2023 comienza mi exploración hacia el mundo de la programación, enfocada en desarrollo web. <br><br>  Lo que mas me gusta del area de la
-                    tecnología de la información es prácticar lo que voy aprendiendo en cuanto a técnicas de programación, 
-                    ir generando nuevos circuitos neuronales, desarrollar y pulir la lógica
-                    de programación, aprender a usar nuevas tecnologías, y por sobre todas las cosas, aprender de aquellos que son expertos en el área. <br><br>
-                    Mi objetivo actual es adquirir experiencia en el mundo laboral de la tecnología, aprender a planificar y diseñar de forma estratégica, con soluciones que prevalezcan en el tiempo.
-                </p>
-                <h2>Conocimientos Actuales</h2>
-                <p>Js / CSS / HTML / React / Node / Express / MongoDB / Diseño web, logos / Adobe Photoshop</p>
-                <h2>Cursos y Conocimientos En Desarrollo</h2>
-                <p> CS50: Introduction to Computer Science, Harvard University / SQL / TypeScript </p>
+                <p id="objective"></p>
+                <div class="flex-main">
+                    <h2>Background</h2>
+                    <p id="backgroundData"></p><br>
+                    <p id="mainParagraph"></p>
+                </div>
+                <div class="flex-main">
+                        <h2 id="knowledge"></h2>
+                        <p  id="knowledgeData" class="text-center"></p>
+                </div>
+                <div class="flex-main">
+                    <h2 id="learning"></h2>
+                    <p  id="learningData" class="text-center"></p>
+                </div>
                 <div class="contact-buttons">
                     <button onclick="openGithub()">Github</button>
                     <button onclick="openLinkedin()">LinkedIn</button>
-                    <button onclick="downloadCV()">CV</button>
+                    <button id="cv" class="es" onclick="downloadCV()">CV</button>
                 </div>
             </div>
         </section>
@@ -37,7 +52,7 @@
         <div class="main-container">
         <h2>/** Portafolio **/</h2>
         <section class="portafolio-container">
-            <div class="proyect-card">
+            <div class="proyect-card card-dark-theme">
                 <h3>Landing Page <br> <i>"Fox Spa"</i></h3>
                 <section>
                     <a target="_blank" href="https://isidorae.github.io/HealthSpa-LandingPage-HTML-CSS/"><img class="card-img" src="./img/landingpage.png" alt=""></a>
@@ -48,11 +63,11 @@
                         </div>
                         <div class="links-list">
                             <a target="_blank" href="https://isidorae.github.io/HealthSpa-LandingPage-HTML-CSS/">DEMO</a>
-                            <a target="_blank" href="https://github.com/isidorae/HealthSpa-LandingPage-HTML-CSS">Repositorio</a>
+                            <a class="repository" target="_blank" href="https://github.com/isidorae/HealthSpa-LandingPage-HTML-CSS"></a>
                         </div>
                 </section>
             </div>
-            <div class="proyect-card">
+            <div class="proyect-card card-dark-theme">
                 <h3>Crud App<br><i>"MyMovies"</i></h3>
                 <section>
                     <a target="_blank" href="https://isidorae.github.io/MovieCollectionCRUD-LocalStorage/"><img class="card-img" src="./img/crudapp.png" alt=""></a>
@@ -63,11 +78,11 @@
                     </div>
                     <div class="links-list">
                         <a target="_blank" href="https://isidorae.github.io/MovieCollectionCRUD-LocalStorage/">DEMO</a>
-                        <a target="_blank" href="https://github.com/isidorae/MovieCollectionCRUD-LocalStorage">Repositorio</a>
+                        <a class="repository" target="_blank" href="https://github.com/isidorae/MovieCollectionCRUD-LocalStorage"></a>
                     </div>
                 </section>
             </div>
-            <div class="proyect-card">
+            <div class="proyect-card card-dark-theme">
                 <h3>Dashboard page<br><i>"MundoClima"</i></h3>
                 <section>
                     <a target="_blank" href="https://isidorae.github.io/chartJsWeatherChile/"><img class="card-img" src="./img/dashboard.png" alt=""></a>
@@ -78,11 +93,11 @@
                         </div>
                         <div class="links-list">
                             <a target="_blank" href="https://isidorae.github.io/chartJsWeatherChile/">DEMO</a>
-                            <a target="_blank" href="https://github.com/isidorae/chartJsWeatherChile">Repositorio</a>
+                            <a class="repository" target="_blank" href="https://github.com/isidorae/chartJsWeatherChile"></a>
                         </div>
                 </section>
             </div>
-            <div class="proyect-card">
+            <div class="proyect-card card-dark-theme">
                 <h3>Restaurant App<br><i>"Thai Nam"</i></h3>
                 <section>
                     <a target="_blank" href="https://isidorae.github.io/thai-restaurant-app/" ><img class="card-img" src="./img/restaurantapp.png" alt=""></a>
@@ -91,15 +106,14 @@
                     <div class="tecnos-list">
                         <p>HTML / CSS / Bootstrap</p>
                         <p>React</p>
-                        <i><small style="color:rgb(128, 95, 199);">useReducer/useContext</small></i>
                         </div>
                         <div class="links-list">
                             <a target="_blank" href="https://isidorae.github.io/thai-restaurant-app/">DEMO</a>
-                            <a target="_blank" href="https://github.com/isidorae/thai-restaurant-app">Repositorio</a>
+                            <a class="repository" target="_blank" href="https://github.com/isidorae/thai-restaurant-app"></a>
                         </div>
                 </section>
             </div>
-            <div class="proyect-card">
+            <div class="proyect-card card-dark-theme">
                 <h3>Ecommerce App<br><i>"Rat Club"</i></h3>
                 <section>
                     <a target="_blank" href="https://isidorae.github.io/rat-club-store/"><img class="card-img" src="./img/ecommerceapp.png" alt=""></a>
@@ -108,22 +122,23 @@
                     <div class="tecnos-list">
                         <p>HTML / CSS / Bootstrap</p>
                         <p>Express / React / MongoDB / Node</p>
-                        <i><small style="color:rgb(128, 95, 199);">useContext</small></i>
                         </div>
                         <div class="links-list">
                             <a target="_blank" href="https://isidorae.github.io/rat-club-store/">DEMO**</a>
-                            <a target="_blank" href="https://github.com/isidorae/rat-club-store">Repositorio Front</a>
-                            <a target="_blank" href="https://github.com/isidorae/ratclub-server">Repositorio Server</a>
+                            <a class="repositoryfront" target="_blank" href="https://github.com/isidorae/rat-club-store">Repositorio Front</a>
+                            <a class="repositoryback" target="_blank" href="https://github.com/isidorae/ratclub-server">Repositorio Server</a>
                         </div>
                 </section>
             </div>
         </section>
     </div>
     </main>
-    <p class="pd-container" ><i><small>**Ecommerce app puede tardar en inicializar muestra de productos e inicio de sesión por servidor usado para despliegue de backend. Revisar Repositorio Front para más info.</small></i></p>
+    <p class="pd-container" ><i><small id="note">**Ecommerce app puede tardar en inicializar muestra de productos e inicio de sesión por servidor usado para despliegue de backend. Revisar Repositorio Front para más info.</small></i></p>
     <footer>
         <p><i>mariaisidoraerrazuriz@gmail.com</i></p>
     </footer>
     <script src="script.js"></script>
+    <script src="lang.js"></script>
+    <script src="theme.js"></script>
 </body>
 </html>
