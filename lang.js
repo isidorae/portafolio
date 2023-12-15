@@ -4,7 +4,7 @@ const spanish = {
     backgroundData: "El año 2019 egrese de una carrera del área de la salud. Luego de probar diversas áreas, el año 2023 decidí dedicar la mayor parte de mi tiempo y energía en aprender programación y desarrollo web.",
     objective: "En continuo aprendizaje 🙏🏻 Buscando adquirir experiencia en el mundo laboral de la tecnología, aprender a planificar y diseñar de forma estratégica, con soluciones que prevalezcan en el tiempo.",
     knowledge: "Conocimientos Actuales",
-    knowledgeData: "Js / CSS / HTML / React / Flask /  Node / Express / MongoDB / Diseño web / Adobe Photoshop",
+    knowledgeData: "Js / Python / CSS / HTML / React / Flask /  Node / Express / MongoDB / SQLite / Diseño web / Adobe Photoshop",
     learning: "Aprendizaje en Desarrollo",
     learningData: "CS50: Introduction to Computer Science, Harvard University / SQL / Python / TypeScript + <i>Todo lo anterior</i> (Siempre hay más por aprender!)",
     repository: "Repositorio",
@@ -20,7 +20,7 @@ const english = {
     backgroundData: "In 2019, I graduated from a health-related field. After exploring various health related and non-related fields, in 2023, I decided to start a new journey towards learning programming and web development.",
     objective: "Avid learner 🙏🏻 Looking to gain experience in the professional world of technology, to learn to plan and design strategically, with solutions that endure over time.",
     knowledge: "Current Knowledge",
-    knowledgeData: "Js / CSS / HTML / React / Flask /  Node / Express / MongoDB / Web design / Adobe Photoshop",
+    knowledgeData: "Js / Python / CSS / HTML / React / Flask /  Node / Express / MongoDB / SQLite / Web design / Adobe Photoshop",
     learning: "Currently Learning",
     learningData: "CS50: Introduction to Computer Science, Harvard University / SQL / Python / TypeScript + <i> All of the above! </i> learning never ends!",
     repository: "Repository",
@@ -41,8 +41,8 @@ let backgroundData = document.getElementById("backgroundData")
 let objective = document.getElementById("objective")
 let knowledge = document.getElementById("knowledge")
 let knowledgeData = document.getElementById("knowledgeData")
-let learning = document.getElementById("learning")
-let learningData = document.getElementById("learningData")
+// let learning = document.getElementById("learning")
+// let learningData = document.getElementById("learningData")
 let repository = document.getElementsByClassName("repository")
 let repositoryfront = document.getElementsByClassName("repositoryfront")
 let repositoryback = document.getElementsByClassName("repositoryback")
@@ -57,8 +57,8 @@ function esLang() {
     objective.innerHTML = spanish.objective;
     knowledge.innerHTML = spanish.knowledge;
     knowledgeData.innerHTML = spanish.knowledgeData
-    learning.innerHTML = spanish.learning;
-    learningData.innerHTML = spanish.learningData;
+    // learning.innerHTML = spanish.learning;
+    // learningData.innerHTML = spanish.learningData;
 
     for (let i = 0; i < repository.length; i++) {
         repository[i].innerHTML = spanish.repository;
@@ -84,8 +84,8 @@ function enLang() {
     objective.innerHTML = english.objective;
     knowledge.innerHTML = english.knowledge;
     knowledgeData.innerHTML = english.knowledgeData
-    learning.innerHTML = english.learning;
-    learningData.innerHTML = english.learningData;
+    // learning.innerHTML = english.learning;
+    // learningData.innerHTML = english.learningData;
 
     for (let i = 0; i < repository.length; i++) {
         repository[i].innerHTML = english.repository;
