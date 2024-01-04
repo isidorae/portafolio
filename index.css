@@ -135,6 +135,19 @@ button:hover {
     cursor: pointer;
 }
 
+.insignias-container {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.insignia-img {
+    height: 7rem;
+    width: auto;
+}
+
 /*********************** main ************************/
 
 main {

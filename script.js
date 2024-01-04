@@ -13,10 +13,10 @@ function downloadCV() {
 
     if (cvBtn == "en") {
         //download english cv
-        window.open("https://drive.google.com/file/d/1t0utui41wbmp4er8njIVGnRTNL70XacJ/view?usp=drive_link", "_blank")
+        window.open("https://drive.google.com/file/d/1t_ik16FiMcdAsGDDdFsiPRc21D83EGM2/view?usp=drive_link", "_blank")
     } else {
         //download spanish cv
-        window.open("https://drive.google.com/file/d/1sQ8obq2bG8NOw-DkcuApPr2sRmuAeGq7/view?usp=sharing", "_blank")
+        window.open("https://drive.google.com/file/d/1YDn3Xi_dYc5GGRWEfiIhgKd2v__hCkud/view?usp=drive_link", "_blank")
     }
 
 
