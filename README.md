@@ -37,13 +37,17 @@ Portafolio de proyectos realizados durante el transcurso del Bootcamp Full Stack
     2. Messages App: app para enviar mensajes de agradecimiento.
         - Backend realizado con Python usando Flask
         - Frontend con Jinja, HTML, CSS y Bootstrap
-        *Proyecto final para curso CS50, Harvard.
+        - Autenticación
+        - SQLite para almacenar data
+        *Proyecto final para curso CS50, Harvard
     
 
     3. My Finance App (2024): app para organizar finanzas personales.
-        - dashboard con resumen de finanzas organizadas por mes.
+        - dashboard con resumen de finanzas organizadas por mes
         - sección para añadir gastos e ingresos + visualizarlos
-        - historial de gastos e ingresos agregados. 
+        - historial de gastos e ingresos agregados
+        - autenticación con JWT
+        - arquitectura backend MVC
 
 
     
