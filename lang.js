@@ -10,7 +10,7 @@ const spanish = {
     repository: "Repositorio",
     repositoryFront: "Repositorio Frontend",
     repositoryBack: "Repositorio Backend",
-    note: "**Ecommerce app puede tardar en inicializar muestra de productos e inicio de sesión por servidor usado para despliegue de backend. Revisar Repositorio Frontend para más info."
+    note: "**Ecommerce y Finance App pueden tardar en inicializar muestra de productos e inicio de sesión por servidor usado para despliegue de backend. Revisar Repositorio Frontend para más info."
 
 }
 
