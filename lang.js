@@ -26,7 +26,7 @@ const english = {
     repository: "Repository",
     repositoryFront: "Frontend Repository",
     repositoryBack: "Backend Repository",
-    note: "**The E-commerce app may take time to initialize product samples and login due to the server used for the backend deployment. Check the Frontend Repository for more information."
+    note: "**The E-commerce and Finance App may take time to initialize product samples and login due to the server used for the backend deployment. Check the Frontend Repository for more information."
 }
 
 document.addEventListener("DOMContentLoaded", function() {
