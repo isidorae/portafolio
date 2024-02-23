@@ -4,7 +4,7 @@ const spanish = {
     backgroundData: "El año 2019 egrese de una carrera del área de la salud. Luego de probar diversas áreas, el año 2023 decidí dedicar la mayor parte de mi tiempo y energía en aprender programación y desarrollo web.",
     objective: "En continuo aprendizaje 🙏🏻 Buscando adquirir experiencia en el mundo laboral de la tecnología, aprender a planificar y diseñar de forma estratégica, con soluciones que prevalezcan en el tiempo.",
     knowledge: "Conocimientos Actuales",
-    knowledgeData: "Js / Python / CSS / HTML / React / Flask / Django / Node / Express / MongoDB / SQLite / Diseño web / Adobe Photoshop",
+    knowledgeData: "Js / Python / CSS / HTML / React / Flask / Django / Node / Express / MongoDB / SQLite / Figma / Adobe Photoshop",
     learning: "Aprendizaje en Desarrollo",
     learningData: "CS50: Introduction to Computer Science, Harvard University / SQL / Python / TypeScript + <i>Todo lo anterior</i> (Siempre hay más por aprender!)",
     repository: "Repositorio",
